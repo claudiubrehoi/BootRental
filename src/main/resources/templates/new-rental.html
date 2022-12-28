@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <title>Adauga rental</title>
+</head>
+<body>
+<h2>Adauga Rental</h2>
+<form th:action="@{/rental}" th:object-="${rentalDto}" method="post">
+    <input type="text" name="clientId" placeholder="Client Id" />
+    <input type="text" name="productId" placeholder="ProductId" />
+    <input type="number" name="price" placeholder="Price" />
+    <input type="datetime-local" name="startDate" placeholder="Start date" />
+    <input type="datetime-local" name="endDate" placeholder="End date" />
+    <input type="submit" value="Baga"/>
+</form>
+</body>
+</html>

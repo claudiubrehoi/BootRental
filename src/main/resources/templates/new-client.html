@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <title>Adauga client</title>
+</head>
+<body>
+<h2>Adauga Client</h2>
+<form th:action="@{/client}" th:object-="${clientDto}" method="post">
+    <input type="text" name="firstName" placeholder="Prenume" />
+    <input type="text" name="lastName" placeholder="Nume" />
+    <input type="text" name="phone" placeholder="Telefon" />
+    <input type="text" name="address" placeholder="Adresa" />
+    <input type="text" name="clientType" placeholder="tip client(ski/snowboard)" />
+
+    <input type="submit" value="Baga"/>
+</form>
+</body>
+</html>

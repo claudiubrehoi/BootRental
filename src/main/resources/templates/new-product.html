@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+    <title>Adauga produs</title>
+</head>
+<body>
+<h2>Adauga Client</h2>
+<form th:action="@{/product}" th:object-="${productDto}" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="productType" placeholder="Product Type" />
+    <input type="text" name="size" placeholder="Size" />
+    <input type="text" name="comments" placeholder="Comments" />
+    <input type="submit" value="Baga"/>
+</form>
+</body>
+</html>

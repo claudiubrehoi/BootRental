@@ -24,17 +24,17 @@ public class RentalService {
     private Rental mapToRental(RentalDto rentalDto) {
         Rental rental = new Rental();
         rental.setClient(clientRepository.findById(rentalDto.getClientId()).orElseThrow());
-        rental.setProduct(productRepository.findById(rentalDto.getProuctId()).orElseThrow());
+        rental.setProduct(productRepository.findById(rentalDto.getProductId()).orElseThrow());
         rental.setPrice(rentalDto.getPrice());
         rental.setStartDate(rentalDto.getStartDate());
-        rental.setStartDate(rentalDto.getEndDate());
+        rental.setEndDate(rentalDto.getEndDate());
         return rental;
     }
 
     private RentalDto mapToRentalDto(Rental rental) {
         RentalDto rentalDto = new RentalDto();
         rentalDto.setClientId(rental.getClient().getId());
-        rentalDto.setProuctId(rental.getProduct().getId());
+        rentalDto.setProductId(rental.getProduct().getId());
         rentalDto.setPrice(rental.getPrice());
         rentalDto.setStartDate(rental.getStartDate());
         rentalDto.setEndDate(rental.getEndDate());

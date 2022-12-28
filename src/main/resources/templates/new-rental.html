@@ -9,7 +9,7 @@
 <form th:action="@{/rental}" th:object-="${rentalDto}" method="post">
     <input type="text" name="clientId" placeholder="Client Id" />
     <input type="text" name="productId" placeholder="ProductId" />
-    <input type="number" name="price" placeholder="Price" />
+    <input type="number" name="price" placeholder="Price" step="0.01" />
     <input type="datetime-local" name="startDate" placeholder="Start date" />
     <input type="datetime-local" name="endDate" placeholder="End date" />
     <input type="submit" value="Baga"/>

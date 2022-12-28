@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
-    <title>Adauga produs</title>
+    <title>Adauga Product</title>
 </head>
 <body>
-<h2>Adauga Client</h2>
+<h2>Adauga Product</h2>
 <form th:action="@{/product}" th:object-="${productDto}" method="post">
     <input type="text" name="name" placeholder="Name" />
     <input type="text" name="productType" placeholder="Product Type" />

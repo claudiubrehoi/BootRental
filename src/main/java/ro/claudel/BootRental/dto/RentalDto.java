@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class RentalDto {
     private Long clientId;
-    private Long prouctId;
+    private Long productId;
     private BigDecimal price;
     private LocalDateTime startDate;
 

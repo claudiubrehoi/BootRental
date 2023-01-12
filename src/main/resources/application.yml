@@ -7,3 +7,5 @@ spring:
     url: jdbc:postgresql://localhost:5432/bootrentaldb
     username: reho
     password: djtommy
+  liquibase:
+    change-log: classpath:db/changelog/changelog.sql

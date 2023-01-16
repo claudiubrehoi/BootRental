@@ -1,4 +1,6 @@
-GRANT ALL ON DATABASE bootrentaldb TO reho;
+CREATE SEQUENCE client_id_seq START 1;
+CREATE SEQUENCE product_id_seq START 1;
+CREATE SEQUENCE rental_id_seq START 1;
 
 CREATE TABLE IF NOT EXISTS client
 (
